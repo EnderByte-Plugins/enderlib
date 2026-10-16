@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+        Standalone on purpose (no parent): consumers import this BOM and must not inherit
+        the build configuration or the test dependencies of the parent.
+    -->
+    <groupId>com.enderbyte</groupId>
+    <artifactId>enderlib-bom</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>EnderLib :: BOM</name>
+    <description>Import this to align every EnderLib module on one version.</description>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-database-api</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-database-core</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-database-sql</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-database-migrations</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-core</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-config</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-item</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-menu</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-command</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-display</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-itemsadder</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enderbyte</groupId>
+                <artifactId>enderlib-all</artifactId>
+                <version>1.0.0</version>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

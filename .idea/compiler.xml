@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="enderlib-config" />
+        <module name="enderlib-item" />
+        <module name="enderlib-example" />
+        <module name="enderlib-database-core" />
+        <module name="enderlib-database-sql" />
+        <module name="enderlib-itemsadder" />
+        <module name="enderlib-command" />
+        <module name="enderlib-database-api" />
+        <module name="enderlib-display" />
+        <module name="enderlib-menu" />
+        <module name="enderlib-core" />
+        <module name="enderlib-database-migrations" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="enderlib-all" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-command" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-config" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-core" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-database-api" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-database-core" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-database-migrations" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-database-sql" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-display" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-example" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-item" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-itemsadder" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-menu" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+      <module name="enderlib-parent" options="-parameters -Xlint:all,-serial,-processing,-deprecation,-removal" />
+    </option>
+  </component>
+</project>

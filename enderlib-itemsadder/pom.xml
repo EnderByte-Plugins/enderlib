@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.enderbyte</groupId>
+        <artifactId>enderlib-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>enderlib-itemsadder</artifactId>
+    <name>EnderLib :: ItemsAdder</name>
+    <description>
+        Optional ItemsAdder addon: textured menus, font-image glyphs and ItemsAdder-backed items. ItemsAdder stays provided.
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.enderbyte</groupId>
+            <artifactId>enderlib-menu</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.enderbyte</groupId>
+            <artifactId>enderlib-item</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>beer.devs</groupId>
+            <artifactId>itemsadder-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.enderbyte</groupId>
+        <artifactId>enderlib-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>enderlib-example</artifactId>
+    <name>EnderLib :: Example plugin</name>
+    <description>
+        A sample Paper plugin that shades and relocates EnderLib exactly the way a consuming plugin
+        should. Never installed or deployed: it exists to prove the API compiles and shades.
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.enderbyte</groupId>
+            <artifactId>enderlib-all</artifactId>
+            <type>pom</type>
+        </dependency>
+        <!-- The one JDBC driver this plugin uses. Not relocated: drivers load classes by name. -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>plugin.yml</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <artifactSet>
+                                <excludes>
+                                    <!-- The server ships SLF4J; a second copy would log to nowhere -->
+                                    <exclude>org.slf4j:*</exclude>
+                                </excludes>
+                            </artifactSet>
+                            <relocations>
+                                <relocation>
+                                    <pattern>com.enderbyte.enderlib</pattern>
+                                    <shadedPattern>com.enderbyte.example.libs.enderlib</shadedPattern>
+                                    <!-- The example's own classes live under com.enderbyte.enderlib.example -->
+                                    <excludes>
+                                        <exclude>com.enderbyte.enderlib.example.**</exclude>
+                                    </excludes>
+                                </relocation>
+                                <relocation>
+                                    <pattern>com.zaxxer.hikari</pattern>
+                                    <shadedPattern>com.enderbyte.example.libs.hikari</shadedPattern>
+                                </relocation>
+                            </relocations>
+                            <transformers>
+                                <!-- REQUIRED: database providers are discovered through META-INF/services -->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                            </transformers>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                        <exclude>META-INF/MANIFEST.MF</exclude>
+                                        <exclude>META-INF/versions/**/module-info.class</exclude>
+                                        <exclude>module-info.class</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

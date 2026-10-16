@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.enderbyte</groupId>
+        <artifactId>enderlib-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>enderlib-database-core</artifactId>
+    <name>EnderLib :: Database Core</name>
+    <description>
+        Engine-independent runtime: executors, retry, metrics, caching, entity mapping and the
+        database registry. Caffeine and Micrometer are optional; the library degrades to no-op
+        caching and lock-free in-memory counters when they are absent.
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.enderbyte</groupId>
+            <artifactId>enderlib-database-api</artifactId>
+        </dependency>
+
+        <!--
+            Optional on purpose: an optional dependency is not inherited transitively, so a plugin
+            that never touches caching or Micrometer does not ship those jars. The classes that use
+            them are only loaded when the corresponding feature is requested.
+        -->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-core</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

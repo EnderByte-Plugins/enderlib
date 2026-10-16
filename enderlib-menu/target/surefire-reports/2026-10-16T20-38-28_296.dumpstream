@@ -1,0 +1,5 @@
+# Created at 2026-10-16T20:38:41.856
+Boot Manifest-JAR contains absolute paths in classpath 'D:\enderbyte\enderlib\enderlib-menu\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

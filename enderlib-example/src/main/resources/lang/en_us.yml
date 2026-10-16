@@ -1,0 +1,5 @@
+prefix: "<dark_gray>[<light_purple>Ender</light_purple>]</dark_gray> "
+welcome: "<prefix><gray>Welcome back, <white><player></white>! Visit <gold>#<joins></gold>."
+gem:
+  given: "<prefix><green>You received <white><amount>x</white> Ender Gem."
+  zap: "[actionbar]<aqua>Zap!"

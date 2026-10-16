@@ -1,0 +1,6 @@
+com\enderbyte\enderlib\database\migration\Checksums.class
+com\enderbyte\enderlib\database\migration\DefaultMigrationService.class
+com\enderbyte\enderlib\database\migration\SqlMigration.class
+com\enderbyte\enderlib\database\migration\MigrationSources$ContentSupplier.class
+com\enderbyte\enderlib\database\migration\MigrationSources.class
+com\enderbyte\enderlib\database\migration\DefaultMigrationServiceFactory.class

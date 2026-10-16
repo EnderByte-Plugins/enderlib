@@ -1,0 +1,7 @@
+name: EnderLibExample
+version: ${project.version}
+main: com.enderbyte.enderlib.example.ExamplePlugin
+api-version: '26.2'
+description: Demonstrates every EnderLib module. Not meant for production servers.
+softdepend:
+  - ItemsAdder

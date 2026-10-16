@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.enderbyte.enderlib.database.sql.SqlDatabaseSmokeTest" time="0.279" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\enderbyte\enderlib\enderlib-database-sql\target\test-classes;D:\enderbyte\enderlib\enderlib-database-sql\target\classes;D:\enderbyte\enderlib\enderlib-database-core\target\enderlib-database-core-1.0.0.jar;D:\enderbyte\enderlib\enderlib-database-api\target\enderlib-database-api-1.0.0.jar;C:\Users\tryll\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\tryll\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\tryll\.m2\repository\com\github\ben-manes\caffeine\caffeine\3.1.8\caffeine-3.1.8.jar;C:\Users\tryll\.m2\repository\org\checkerframework\checker-qual\3.37.0\checker-qual-3.37.0.jar;C:\Users\tryll\.m2\repository\com\google\errorprone\error_prone_annotations\2.21.1\error_prone_annotations-2.21.1.jar;C:\Users\tryll\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\tryll\.m2\repository\org\xerial\sqlite-jdbc\3.45.3.0\sqlite-jdbc-3.45.3.0.jar;C:\Users\tryll\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\tryll\.m2\repository\com\mysql\mysql-connector-j\8.4.0\mysql-connector-j-8.4.0.jar;C:\Users\tryll\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\tryll\.m2\repository\org\mariadb\jdbc\mariadb-java-client\3.3.3\mariadb-java-client-3.3.3.jar;C:\Users\tryll\.m2\repository\com\github\waffle\waffle-jna\3.3.0\waffle-jna-3.3.0.jar;C:\Users\tryll\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\tryll\.m2\repository\net\java\dev\jna\jna-platform\5.13.0\jna-platform-5.13.0.jar;C:\Users\tryll\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.7\jcl-over-slf4j-2.0.7.jar;C:\Users\tryll\.m2\repository\org\testcontainers\postgresql\1.19.8\postgresql-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\jdbc\1.19.8\jdbc-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\database-commons\1.19.8\database-commons-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\mysql\1.19.8\mysql-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\mariadb\1.19.8\mariadb-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\junit-jupiter\1.19.8\junit-jupiter-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\testcontainers\1.19.8\testcontainers-1.19.8.jar;C:\Users\tryll\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\tryll\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\tryll\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\tryll\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\tryll\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\tryll\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\tryll\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\tryll\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.6\docker-java-transport-zerodep-3.3.6.jar;C:\Users\tryll\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\tryll\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\tryll\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\tryll\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\tryll\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\tryll\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\tryll\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\tryll\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\tryll\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\tryll\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\tryll\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\tryll\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\tryll\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\tryll\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\tryll\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Copenhagen"/>
+    <property name="user.country.format" value="DK"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\tryll\AppData\Local\Temp\surefire16514541817455637884\surefirebooter-20261016203830254_3.jar C:\Users\tryll\AppData\Local\Temp\surefire16514541817455637884 2026-10-16T20-38-28_296-jvmRun1 surefire-20261016203830254_1tmp surefire_0-20261016203830254_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\enderbyte\enderlib\enderlib-database-sql\target\test-classes;D:\enderbyte\enderlib\enderlib-database-sql\target\classes;D:\enderbyte\enderlib\enderlib-database-core\target\enderlib-database-core-1.0.0.jar;D:\enderbyte\enderlib\enderlib-database-api\target\enderlib-database-api-1.0.0.jar;C:\Users\tryll\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\tryll\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\tryll\.m2\repository\com\github\ben-manes\caffeine\caffeine\3.1.8\caffeine-3.1.8.jar;C:\Users\tryll\.m2\repository\org\checkerframework\checker-qual\3.37.0\checker-qual-3.37.0.jar;C:\Users\tryll\.m2\repository\com\google\errorprone\error_prone_annotations\2.21.1\error_prone_annotations-2.21.1.jar;C:\Users\tryll\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\tryll\.m2\repository\org\xerial\sqlite-jdbc\3.45.3.0\sqlite-jdbc-3.45.3.0.jar;C:\Users\tryll\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\tryll\.m2\repository\com\mysql\mysql-connector-j\8.4.0\mysql-connector-j-8.4.0.jar;C:\Users\tryll\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\tryll\.m2\repository\org\mariadb\jdbc\mariadb-java-client\3.3.3\mariadb-java-client-3.3.3.jar;C:\Users\tryll\.m2\repository\com\github\waffle\waffle-jna\3.3.0\waffle-jna-3.3.0.jar;C:\Users\tryll\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\tryll\.m2\repository\net\java\dev\jna\jna-platform\5.13.0\jna-platform-5.13.0.jar;C:\Users\tryll\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.7\jcl-over-slf4j-2.0.7.jar;C:\Users\tryll\.m2\repository\org\testcontainers\postgresql\1.19.8\postgresql-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\jdbc\1.19.8\jdbc-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\database-commons\1.19.8\database-commons-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\mysql\1.19.8\mysql-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\mariadb\1.19.8\mariadb-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\junit-jupiter\1.19.8\junit-jupiter-1.19.8.jar;C:\Users\tryll\.m2\repository\org\testcontainers\testcontainers\1.19.8\testcontainers-1.19.8.jar;C:\Users\tryll\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\tryll\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\tryll\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\tryll\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\tryll\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\tryll\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\tryll\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\tryll\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.6\docker-java-transport-zerodep-3.3.6.jar;C:\Users\tryll\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\tryll\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\tryll\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\tryll\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\tryll\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\tryll\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\tryll\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\tryll\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\tryll\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\tryll\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\tryll\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\tryll\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\tryll\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\tryll\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\tryll\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\tryll"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\enderbyte\enderlib\enderlib-database-sql"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\tryll\AppData\Local\Temp\surefire16514541817455637884\surefirebooter-20261016203830254_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.2+10-LTS-69"/>
+    <property name="user.name" value="tryll"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="IBM850"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2025.3.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="localRepository" value="C:\Users\tryll\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\tryll\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.3.3"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="D:\enderbyte\enderlib\enderlib-database-sql"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Go\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\PuTTY\;C:\Program Files\Fortect;C:\Users\tryll\.cargo\bin;C:\Program Files\Elixir\bin;C:\Program Files\Erlang OTP\bin;C:\Users\tryll\scoop\apps\maven\current\bin;C:\Users\tryll\scoop\shims;c:\Users\tryll\AppData\Local\Programs\cursor\resources\app\codeBin;C:\Users\tryll\AppData\Local\Microsoft\WindowsApps;C:\Users\tryll\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tryll\AppData\Roaming\npm;C:\Users\tryll\AppData\Local\Programs\Windsurf\bin;C:\Users\tryll\.dotnet\tools;C:\Program Files\JetBrains\PyCharm 2025.3.3\bin;C:\Users\tryll\AppData\Local\Python\bin;C:\Users\tryll\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.3.3\bin;C:\Users\tryll\go\bin;C:\Users\tryll\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.2+10-LTS-69"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\Users\tryll\.m2\repository"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="runsConcurrentWorkWithoutLeakingConnections" classname="com.enderbyte.enderlib.database.sql.SqlDatabaseSmokeTest" time="0.115">
+    <system-out><![CDATA[20:38:32.627 [main] DEBUG com.enderbyte.enderlib.database.sql.SqlDatabaseProvider -- Loaded the H2 JDBC driver (org.h2.Driver)
+20:38:32.627 [main] DEBUG com.zaxxer.hikari.HikariConfig -- Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@105be200
+20:38:32.627 [main] DEBUG com.zaxxer.hikari.HikariConfig -- EnderDB-smoke-31456 - configuration:
+20:38:32.630 [main] DEBUG com.zaxxer.hikari.HikariConfig -- allowPoolSuspension.............false
+20:38:32.630 [main] DEBUG com.zaxxer.hikari.HikariConfig -- autoCommit......................true
+20:38:32.630 [main] DEBUG com.zaxxer.hikari.HikariConfig -- catalog.........................none
+20:38:32.630 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionInitSql...............none
+20:38:32.630 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTestQuery.............none
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTimeout...............10000
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSource......................none
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceClassName.............none
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceJNDI..................none
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceProperties............{password=<masked>}
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- driverClassName................."org.h2.Driver"
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- exceptionOverrideClassName......none
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckProperties...........{}
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckRegistry.............none
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- idleTimeout.....................600000
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- initializationFailTimeout.......1
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- isolateInternalQueries..........false
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- jdbcUrl.........................jdbc:h2:mem:smoke-28569239-c44d-4592-8dab-2f8100582383;DB_CLOSE_DELAY=-1
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- keepaliveTime...................300000
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- leakDetectionThreshold..........0
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maxLifetime.....................1800000
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maximumPoolSize.................10
+20:38:32.631 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricRegistry..................none
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricsTrackerFactory...........none
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- minimumIdle.....................10
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- password........................<masked>
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- poolName........................"EnderDB-smoke-31456"
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- readOnly........................false
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- registerMbeans..................false
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- scheduledExecutor...............none
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- schema..........................none
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- threadFactory...................internal
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- transactionIsolation............default
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- username........................"sa"
+20:38:32.632 [main] DEBUG com.zaxxer.hikari.HikariConfig -- validationTimeout...............5000
+20:38:32.634 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-31456 - Starting...
+20:38:32.638 [main] INFO com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Added connection conn19: url=jdbc:h2:mem:smoke-28569239-c44d-4592-8dab-2f8100582383 user=SA
+20:38:32.638 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-31456 - Start completed.
+20:38:32.638 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Connected database 'smoke-31456' (H2), pool size 10
+20:38:32.655 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Added connection conn20: url=jdbc:h2:mem:smoke-28569239-c44d-4592-8dab-2f8100582383 user=SA
+20:38:32.686 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Connection not added, stats (total=2, active=2, idle=0, waiting=6)
+20:38:32.687 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Added connection conn21: url=jdbc:h2:mem:smoke-28569239-c44d-4592-8dab-2f8100582383 user=SA
+20:38:32.694 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closing database 'smoke-31456'
+20:38:32.695 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-31456 - Shutdown initiated...
+20:38:32.695 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Before shutdown stats (total=3, active=0, idle=3, waiting=0)
+20:38:32.695 [EnderDB-smoke-31456 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- EnderDB-smoke-31456 - Closing connection conn19: url=jdbc:h2:mem:smoke-28569239-c44d-4592-8dab-2f8100582383 user=SA: (connection evicted)
+20:38:32.695 [EnderDB-smoke-31456 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- EnderDB-smoke-31456 - Closing connection conn20: url=jdbc:h2:mem:smoke-28569239-c44d-4592-8dab-2f8100582383 user=SA: (connection evicted)
+20:38:32.695 [EnderDB-smoke-31456 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- EnderDB-smoke-31456 - Closing connection conn21: url=jdbc:h2:mem:smoke-28569239-c44d-4592-8dab-2f8100582383 user=SA: (connection evicted)
+20:38:32.718 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Connection not added, stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.719 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Connection not added, stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.719 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Connection not added, stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.719 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Connection not added, stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.719 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Connection not added, stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.719 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Connection not added, stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.719 [EnderDB-smoke-31456 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - Connection not added, stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.737 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-31456 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.737 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-31456 - Shutdown completed.
+20:38:32.737 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closed database 'smoke-31456'
+]]></system-out>
+  </testcase>
+  <testcase name="commitsAndRollsBackTransactions" classname="com.enderbyte.enderlib.database.sql.SqlDatabaseSmokeTest" time="0.041">
+    <system-out><![CDATA[20:38:32.742 [main] DEBUG com.enderbyte.enderlib.database.sql.SqlDatabaseProvider -- Loaded the H2 JDBC driver (org.h2.Driver)
+20:38:32.742 [main] DEBUG com.zaxxer.hikari.HikariConfig -- Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@105be200
+20:38:32.742 [main] DEBUG com.zaxxer.hikari.HikariConfig -- EnderDB-smoke-97423 - configuration:
+20:38:32.743 [main] DEBUG com.zaxxer.hikari.HikariConfig -- allowPoolSuspension.............false
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- autoCommit......................true
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- catalog.........................none
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionInitSql...............none
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTestQuery.............none
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTimeout...............10000
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSource......................none
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceClassName.............none
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceJNDI..................none
+20:38:32.748 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceProperties............{password=<masked>}
+20:38:32.749 [main] DEBUG com.zaxxer.hikari.HikariConfig -- driverClassName................."org.h2.Driver"
+20:38:32.750 [main] DEBUG com.zaxxer.hikari.HikariConfig -- exceptionOverrideClassName......none
+20:38:32.750 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckProperties...........{}
+20:38:32.750 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckRegistry.............none
+20:38:32.750 [main] DEBUG com.zaxxer.hikari.HikariConfig -- idleTimeout.....................600000
+20:38:32.750 [main] DEBUG com.zaxxer.hikari.HikariConfig -- initializationFailTimeout.......1
+20:38:32.750 [main] DEBUG com.zaxxer.hikari.HikariConfig -- isolateInternalQueries..........false
+20:38:32.751 [main] DEBUG com.zaxxer.hikari.HikariConfig -- jdbcUrl.........................jdbc:h2:mem:smoke-d2e290fd-8d6f-4bd2-b70d-daaee3a09bbb;DB_CLOSE_DELAY=-1
+20:38:32.751 [main] DEBUG com.zaxxer.hikari.HikariConfig -- keepaliveTime...................300000
+20:38:32.751 [main] DEBUG com.zaxxer.hikari.HikariConfig -- leakDetectionThreshold..........0
+20:38:32.751 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maxLifetime.....................1800000
+20:38:32.751 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maximumPoolSize.................10
+20:38:32.751 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricRegistry..................none
+20:38:32.751 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricsTrackerFactory...........none
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- minimumIdle.....................10
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- password........................<masked>
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- poolName........................"EnderDB-smoke-97423"
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- readOnly........................false
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- registerMbeans..................false
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- scheduledExecutor...............none
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- schema..........................none
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- threadFactory...................internal
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- transactionIsolation............default
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- username........................"sa"
+20:38:32.752 [main] DEBUG com.zaxxer.hikari.HikariConfig -- validationTimeout...............5000
+20:38:32.752 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-97423 - Starting...
+20:38:32.755 [main] INFO com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-97423 - Added connection conn22: url=jdbc:h2:mem:smoke-d2e290fd-8d6f-4bd2-b70d-daaee3a09bbb user=SA
+20:38:32.755 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-97423 - Start completed.
+20:38:32.756 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Connected database 'smoke-97423' (H2), pool size 10
+20:38:32.777 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closing database 'smoke-97423'
+20:38:32.777 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-97423 - Shutdown initiated...
+20:38:32.777 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-97423 - Before shutdown stats (total=1, active=0, idle=1, waiting=0)
+20:38:32.778 [EnderDB-smoke-97423 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- EnderDB-smoke-97423 - Closing connection conn22: url=jdbc:h2:mem:smoke-d2e290fd-8d6f-4bd2-b70d-daaee3a09bbb user=SA: (connection evicted)
+20:38:32.778 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-97423 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.778 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-97423 - Shutdown completed.
+20:38:32.778 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closed database 'smoke-97423'
+]]></system-out>
+  </testcase>
+  <testcase name="insertsAndMapsEntities" classname="com.enderbyte.enderlib.database.sql.SqlDatabaseSmokeTest" time="0.028">
+    <system-out><![CDATA[20:38:32.788 [main] DEBUG com.enderbyte.enderlib.database.sql.SqlDatabaseProvider -- Loaded the H2 JDBC driver (org.h2.Driver)
+20:38:32.788 [main] DEBUG com.zaxxer.hikari.HikariConfig -- Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@105be200
+20:38:32.788 [main] DEBUG com.zaxxer.hikari.HikariConfig -- EnderDB-smoke-10915 - configuration:
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- allowPoolSuspension.............false
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- autoCommit......................true
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- catalog.........................none
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionInitSql...............none
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTestQuery.............none
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTimeout...............10000
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSource......................none
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceClassName.............none
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceJNDI..................none
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceProperties............{password=<masked>}
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- driverClassName................."org.h2.Driver"
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- exceptionOverrideClassName......none
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckProperties...........{}
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckRegistry.............none
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- idleTimeout.....................600000
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- initializationFailTimeout.......1
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- isolateInternalQueries..........false
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- jdbcUrl.........................jdbc:h2:mem:smoke-b080572c-3574-475d-99db-debb2f826ee6;DB_CLOSE_DELAY=-1
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- keepaliveTime...................300000
+20:38:32.789 [main] DEBUG com.zaxxer.hikari.HikariConfig -- leakDetectionThreshold..........0
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maxLifetime.....................1800000
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maximumPoolSize.................10
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricRegistry..................none
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricsTrackerFactory...........none
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- minimumIdle.....................10
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- password........................<masked>
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- poolName........................"EnderDB-smoke-10915"
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- readOnly........................false
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- registerMbeans..................false
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- scheduledExecutor...............none
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- schema..........................none
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- threadFactory...................internal
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- transactionIsolation............default
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- username........................"sa"
+20:38:32.790 [main] DEBUG com.zaxxer.hikari.HikariConfig -- validationTimeout...............5000
+20:38:32.790 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-10915 - Starting...
+20:38:32.794 [main] INFO com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-10915 - Added connection conn23: url=jdbc:h2:mem:smoke-b080572c-3574-475d-99db-debb2f826ee6 user=SA
+20:38:32.794 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-10915 - Start completed.
+20:38:32.795 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Connected database 'smoke-10915' (H2), pool size 10
+20:38:32.809 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closing database 'smoke-10915'
+20:38:32.810 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-10915 - Shutdown initiated...
+20:38:32.810 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-10915 - Before shutdown stats (total=1, active=0, idle=1, waiting=0)
+20:38:32.810 [EnderDB-smoke-10915 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- EnderDB-smoke-10915 - Closing connection conn23: url=jdbc:h2:mem:smoke-b080572c-3574-475d-99db-debb2f826ee6 user=SA: (connection evicted)
+20:38:32.810 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-10915 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.810 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-10915 - Shutdown completed.
+20:38:32.810 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closed database 'smoke-10915'
+]]></system-out>
+  </testcase>
+  <testcase name="connectsAndReportsHealth" classname="com.enderbyte.enderlib.database.sql.SqlDatabaseSmokeTest" time="0.015">
+    <system-out><![CDATA[20:38:32.820 [main] DEBUG com.enderbyte.enderlib.database.sql.SqlDatabaseProvider -- Loaded the H2 JDBC driver (org.h2.Driver)
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@105be200
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- EnderDB-smoke-9947 - configuration:
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- allowPoolSuspension.............false
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- autoCommit......................true
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- catalog.........................none
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionInitSql...............none
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTestQuery.............none
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTimeout...............10000
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSource......................none
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceClassName.............none
+20:38:32.820 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceJNDI..................none
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceProperties............{password=<masked>}
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- driverClassName................."org.h2.Driver"
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- exceptionOverrideClassName......none
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckProperties...........{}
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckRegistry.............none
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- idleTimeout.....................600000
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- initializationFailTimeout.......1
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- isolateInternalQueries..........false
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- jdbcUrl.........................jdbc:h2:mem:smoke-f137ad5c-09af-4f56-837a-9bade89fb16c;DB_CLOSE_DELAY=-1
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- keepaliveTime...................300000
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- leakDetectionThreshold..........0
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maxLifetime.....................1800000
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maximumPoolSize.................10
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricRegistry..................none
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricsTrackerFactory...........none
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- minimumIdle.....................10
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- password........................<masked>
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- poolName........................"EnderDB-smoke-9947"
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- readOnly........................false
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- registerMbeans..................false
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- scheduledExecutor...............none
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- schema..........................none
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- threadFactory...................internal
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- transactionIsolation............default
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- username........................"sa"
+20:38:32.822 [main] DEBUG com.zaxxer.hikari.HikariConfig -- validationTimeout...............5000
+20:38:32.822 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-9947 - Starting...
+20:38:32.824 [main] INFO com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-9947 - Added connection conn24: url=jdbc:h2:mem:smoke-f137ad5c-09af-4f56-837a-9bade89fb16c user=SA
+20:38:32.824 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-9947 - Start completed.
+20:38:32.824 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Connected database 'smoke-9947' (H2), pool size 10
+20:38:32.826 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closing database 'smoke-9947'
+20:38:32.826 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-9947 - Shutdown initiated...
+20:38:32.826 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-9947 - Before shutdown stats (total=1, active=0, idle=1, waiting=0)
+20:38:32.826 [EnderDB-smoke-9947 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- EnderDB-smoke-9947 - Closing connection conn24: url=jdbc:h2:mem:smoke-f137ad5c-09af-4f56-837a-9bade89fb16c user=SA: (connection evicted)
+20:38:32.828 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-9947 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.830 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-9947 - Shutdown completed.
+20:38:32.830 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closed database 'smoke-9947'
+]]></system-out>
+  </testcase>
+  <testcase name="batchesInserts" classname="com.enderbyte.enderlib.database.sql.SqlDatabaseSmokeTest" time="0.026">
+    <system-out><![CDATA[20:38:32.837 [main] DEBUG com.enderbyte.enderlib.database.sql.SqlDatabaseProvider -- Loaded the H2 JDBC driver (org.h2.Driver)
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@105be200
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- EnderDB-smoke-97040 - configuration:
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- allowPoolSuspension.............false
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- autoCommit......................true
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- catalog.........................none
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionInitSql...............none
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTestQuery.............none
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTimeout...............10000
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSource......................none
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceClassName.............none
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceJNDI..................none
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceProperties............{password=<masked>}
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- driverClassName................."org.h2.Driver"
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- exceptionOverrideClassName......none
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckProperties...........{}
+20:38:32.838 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckRegistry.............none
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- idleTimeout.....................600000
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- initializationFailTimeout.......1
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- isolateInternalQueries..........false
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- jdbcUrl.........................jdbc:h2:mem:smoke-c4086605-d550-4366-b700-e05104fe2d6b;DB_CLOSE_DELAY=-1
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- keepaliveTime...................300000
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- leakDetectionThreshold..........0
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maxLifetime.....................1800000
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maximumPoolSize.................10
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricRegistry..................none
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricsTrackerFactory...........none
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- minimumIdle.....................10
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- password........................<masked>
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- poolName........................"EnderDB-smoke-97040"
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- readOnly........................false
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- registerMbeans..................false
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- scheduledExecutor...............none
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- schema..........................none
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- threadFactory...................internal
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- transactionIsolation............default
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- username........................"sa"
+20:38:32.839 [main] DEBUG com.zaxxer.hikari.HikariConfig -- validationTimeout...............5000
+20:38:32.839 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-97040 - Starting...
+20:38:32.851 [main] INFO com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-97040 - Added connection conn25: url=jdbc:h2:mem:smoke-c4086605-d550-4366-b700-e05104fe2d6b user=SA
+20:38:32.852 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-97040 - Start completed.
+20:38:32.852 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Connected database 'smoke-97040' (H2), pool size 10
+20:38:32.858 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closing database 'smoke-97040'
+20:38:32.859 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-97040 - Shutdown initiated...
+20:38:32.859 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-97040 - Before shutdown stats (total=1, active=0, idle=1, waiting=0)
+20:38:32.859 [EnderDB-smoke-97040 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- EnderDB-smoke-97040 - Closing connection conn25: url=jdbc:h2:mem:smoke-c4086605-d550-4366-b700-e05104fe2d6b user=SA: (connection evicted)
+20:38:32.859 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-97040 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.859 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-97040 - Shutdown completed.
+20:38:32.859 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closed database 'smoke-97040'
+]]></system-out>
+  </testcase>
+  <testcase name="supportsRepositories" classname="com.enderbyte.enderlib.database.sql.SqlDatabaseSmokeTest" time="0.036">
+    <system-out><![CDATA[20:38:32.870 [main] DEBUG com.enderbyte.enderlib.database.sql.SqlDatabaseProvider -- Loaded the H2 JDBC driver (org.h2.Driver)
+20:38:32.870 [main] DEBUG com.zaxxer.hikari.HikariConfig -- Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@105be200
+20:38:32.870 [main] DEBUG com.zaxxer.hikari.HikariConfig -- EnderDB-smoke-59520 - configuration:
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- allowPoolSuspension.............false
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- autoCommit......................true
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- catalog.........................none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionInitSql...............none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTestQuery.............none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTimeout...............10000
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSource......................none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceClassName.............none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceJNDI..................none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceProperties............{password=<masked>}
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- driverClassName................."org.h2.Driver"
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- exceptionOverrideClassName......none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckProperties...........{}
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckRegistry.............none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- idleTimeout.....................600000
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- initializationFailTimeout.......1
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- isolateInternalQueries..........false
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- jdbcUrl.........................jdbc:h2:mem:smoke-4e9f2743-d1bc-4192-869f-a0d23d5d419b;DB_CLOSE_DELAY=-1
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- keepaliveTime...................300000
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- leakDetectionThreshold..........0
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maxLifetime.....................1800000
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- maximumPoolSize.................10
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricRegistry..................none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- metricsTrackerFactory...........none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- minimumIdle.....................10
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- password........................<masked>
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- poolName........................"EnderDB-smoke-59520"
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- readOnly........................false
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- registerMbeans..................false
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- scheduledExecutor...............none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- schema..........................none
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- threadFactory...................internal
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- transactionIsolation............default
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- username........................"sa"
+20:38:32.871 [main] DEBUG com.zaxxer.hikari.HikariConfig -- validationTimeout...............5000
+20:38:32.872 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-59520 - Starting...
+20:38:32.877 [main] INFO com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-59520 - Added connection conn26: url=jdbc:h2:mem:smoke-4e9f2743-d1bc-4192-869f-a0d23d5d419b user=SA
+20:38:32.877 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-59520 - Start completed.
+20:38:32.878 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Connected database 'smoke-59520' (H2), pool size 10
+20:38:32.893 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closing database 'smoke-59520'
+20:38:32.894 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-59520 - Shutdown initiated...
+20:38:32.894 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-59520 - Before shutdown stats (total=1, active=0, idle=1, waiting=0)
+20:38:32.896 [EnderDB-smoke-59520 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- EnderDB-smoke-59520 - Closing connection conn26: url=jdbc:h2:mem:smoke-4e9f2743-d1bc-4192-869f-a0d23d5d419b user=SA: (connection evicted)
+20:38:32.896 [main] DEBUG com.zaxxer.hikari.pool.HikariPool -- EnderDB-smoke-59520 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+20:38:32.897 [main] INFO com.zaxxer.hikari.HikariDataSource -- EnderDB-smoke-59520 - Shutdown completed.
+20:38:32.897 [main] INFO com.enderbyte.enderlib.database.core.AbstractDatabase -- Closed database 'smoke-59520'
+]]></system-out>
+  </testcase>
+</testsuite>

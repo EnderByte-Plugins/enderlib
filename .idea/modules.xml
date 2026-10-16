@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/enderlib-command/enderlib-command.iml" filepath="$PROJECT_DIR$/enderlib-command/enderlib-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enderlib-config/enderlib-config.iml" filepath="$PROJECT_DIR$/enderlib-config/enderlib-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enderlib-core/enderlib-core.iml" filepath="$PROJECT_DIR$/enderlib-core/enderlib-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enderlib-display/enderlib-display.iml" filepath="$PROJECT_DIR$/enderlib-display/enderlib-display.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enderlib-example/enderlib-example.iml" filepath="$PROJECT_DIR$/enderlib-example/enderlib-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enderlib-item/enderlib-item.iml" filepath="$PROJECT_DIR$/enderlib-item/enderlib-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enderlib-itemsadder/enderlib-itemsadder.iml" filepath="$PROJECT_DIR$/enderlib-itemsadder/enderlib-itemsadder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enderlib-menu/enderlib-menu.iml" filepath="$PROJECT_DIR$/enderlib-menu/enderlib-menu.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.enderbyte</groupId>
+        <artifactId>enderlib-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>enderlib-item</artifactId>
+    <name>EnderLib :: Item</name>
+    <description>
+        Item builder over Paper data components, typed PDC tags, custom item registry with interaction handlers, and item codecs.
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.enderbyte</groupId>
+            <artifactId>enderlib-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.enderbyte</groupId>
+            <artifactId>enderlib-database-api</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>

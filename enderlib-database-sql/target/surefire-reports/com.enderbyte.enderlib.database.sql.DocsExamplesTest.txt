@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.enderbyte.enderlib.database.sql.DocsExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.235 s -- in com.enderbyte.enderlib.database.sql.DocsExamplesTest
